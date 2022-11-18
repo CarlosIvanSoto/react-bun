@@ -5,7 +5,6 @@ export const useShoppingCart = () => {
   const [shoppingCart, setShoppingCart] = useState<{[key:string]: ProductInCart}>({})
 
   const onProductCountChange = ({count, product}: onChangeArgs) => {
-
     if (count === 0) 
       setShoppingCart(prev => {
         // delete prev[product.id]
