@@ -1,0 +1,101 @@
+[
+    {
+        "type": "text",
+        "name": "firstName",
+        "placeholder": "Nombre",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "Este campo es requerido"
+            },
+            {
+                "type": "min",
+                "value": 5,
+                "message": "Minimo 5 caracteres"
+            },
+            {
+                "type": "max"
+            }
+        ]
+    },{
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Apellido",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    },{
+        "type": "email",
+        "name": "email",
+        "placeholder": "email@email.com",
+        "label": "Email Address",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "Este campo es requerido"
+            },
+            {
+                "type": "email",
+                "message": "Email invalido"
+            }
+        ]
+    },{
+        "type": "password",
+        "name": "password",
+        "placeholder": "********",
+        "label": "Password",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "Este campo es requerido"
+            }
+        ]
+    },{
+        "type": "password",
+        "name": "reapetPassword",
+        "placeholder": "********",
+        "label": "Reapet Password",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "Este campo es requerido"
+            }
+        ]
+    },{
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "value": "",
+                "label": "Select Option"
+            },
+            {
+                "value": "1",
+                "label": "Super Smash"
+            },
+            {
+                "value": "2",
+                "label": "Metal Gear"
+            },
+            {
+                "value": "3",
+                "label": "Resident Evil"
+            }
+        ]
+    },{
+        "type": "checkbox",
+        "label": "Terms & condicions",
+        "name": "terms"
+    }
+]
